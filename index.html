@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- se importa el icono (tambien llamado favicon) que ira en la barra de navegacion del navegador -->
+    <link rel="icon" href="./assets/icono.ico">
+        <!-- se importan los cdn css necesarios -->
+    <link rel="stylesheet" href="./css/App.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+        <!-- se importan los cdn js o Ts necesarios -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script src="https://unpkg.com/leaflet-auto-graticule"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script type="text/javascript" src="./app/data.js"></script>
+    <title>mi mapa</title>
+</head>
+
+<body>
+        <!-- se crea un contenedor principal -->
+    <main class="container">
+            <!-- se titula -->
+        <h1>Droguerias de la Comuna 2 | Santiago de cali</h1>
+        <h4><span>&copy;</span> From letsly matabajoy</h4>
+            <!-- se crea la seccion donde ira el mapa -->
+        <section class="container-map">
+            <div class="map" id="map"></div>
+        </section>
+    </main>
+        <!-- se importan los modulos js (no se ponen Type="module" ya que asi todo se entiende de forma global y no toca estar importando varibles, al ser un proyecto pequeño) -->
+    <script src="./app/map.js"></script>
+    <script src="./app/icons.js"></script>
+    <script src="./app/geojsonLayer.js"></script>
+    <script src="./app/layers.js"></script>
+    <script src="./app/buttons.js"></script>
+    <script src="./app/eventControls.js"></script>
+
+
+</body>
+
+</html>

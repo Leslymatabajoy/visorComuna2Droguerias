@@ -1,0 +1,93 @@
+/* se define estilo del body, el contenedor del mapa y el mapa */
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.container {
+    display: flex; /* contenedor flexible */
+    flex-direction: column; /* direccion deflexibilid elementos debajo de otros */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #fffaf0, #Add8ef);/* cambio de color con gradiente de arriba a abajo */
+}
+
+.container-map {
+    height: 70vh;
+    width: 80vw;
+}
+
+.map {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06); /* pequeña sombra externa */
+}
+
+/* se definen los estilos de los botones dentro del mapa */
+#boton-cambiar-icono {
+    background-color: #ffff;
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.img-button {
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    background-image: url("../assets/defaultIcon.svg");/* direccion de icono */
+}
+
+.img-button:active {
+    scale: 0.9; /* cambio de tamaño levemente al dar click  en el boton */
+}
+
+#boton-gps {
+    background-color: #ffff;
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.img-button-gps {
+    width: 25px;
+    height: 25px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    background-image: url("../assets/markerIcon.svg");
+}
+
+#boton-mapa-calor {
+    background-color: #ffff;
+    border-radius: 5px;
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.boton-calor {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    cursor: pointer;
+    border: none;
+    background-image: url("../assets/heatmap.svg");
+}
+
+.boton-calor:active {
+    scale: 0.9;
+}
+
+.leaflet-control-scale {
+    background: transparent;
+    opacity: 0.5;
+}
+
+.leaflet-grid-label {
+    color: #5c6062;
+    opacity: 0.4; /* opacidad  de las coordenadas */
+}
+
+
