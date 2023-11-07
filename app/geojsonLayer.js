@@ -1,7 +1,7 @@
 // Crea un nuevo grupo de clusters (paquete) de marcadores
 var markers = L.markerClusterGroup({
     iconCreateFunction: function (cluster) {
-        return L.icon({ iconUrl: '../assets/heatmap.svg', iconSize: [25, 25] });
+        return L.icon({ iconUrl: '../assets/heatmap.png', iconSize: [25, 25] });
     }
 });
 
