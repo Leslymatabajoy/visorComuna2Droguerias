@@ -9,7 +9,7 @@ var markers = L.markerClusterGroup({
 var geojsonLayer = L.geoJSON(geojsonFeature, {
     pointToLayer: function (feature, latlng) {
         var marker = L.marker(latlng, { icon: Icono1 });
-        marker.bindPopup(feature.properties.name + ', ' + feature.properties.adress);
+        marker.bindPopup(feature.properties.name + ', ' + feature.properties.adress + ', ' + feature.properties.attentionTime + ', ' + feature.geometry.coordinates);
         return marker;
     }
 });
